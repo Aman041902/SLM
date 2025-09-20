@@ -16,14 +16,14 @@ The model is a decoder-only Transformer, similar in architecture to the original
 
 ### Key Hyperparameters
 
-| Parameter | Value | Description |
-| :--- | :--- | :--- |
-| `vocab_size` | 8000 | The number of unique tokens in the vocabulary. |
-| `block_size` | 256 | The context window size for the model. |
-| `n_layer` | 3 | The number of Transformer blocks. |
-| `n_head` | 4 | The number of attention heads. |
-| `n_embd` | 256 | The embedding dimension for tokens. |
-| `dropout` | 0.1 | Dropout rate for regularization. |
+| Parameter      | Value | Description                                  |
+| :------------- | :---- | :------------------------------------------- |
+| `vocab_size`   | 8000  | The number of unique tokens in the vocabulary. |
+| `block_size`   | 256   | The context window size for the model.       |
+| `n_layer`      | 3     | The number of Transformer blocks.            |
+| `n_head`       | 4     | The number of attention heads.               |
+| `n_embd`       | 256   | The embedding dimension for tokens.          |
+| `dropout`      | 0.1   | Dropout rate for regularization.             |
 
 ## Project Pipeline ⚙️
 
@@ -49,8 +49,8 @@ Follow these steps to set up the project and train your own model.
 ### Step 1: Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone https://github.com/Aman041902/SLM.git
+cd SLM
 ```
 
 ### Step 2: Set Up the Environment
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ### Step 3: Download the Dataset
 The raw text data for the books is not included in this repository. You must download it from Kaggle.
 
-1.  Go to this Kaggle dataset link: **[(https://www.kaggle.com/datasets/khulasasndh/game-of-thrones-books)]**
+1.  Go to the Kaggle dataset link: [Game of Thrones Books by Khulasa Sandh](https://www.kaggle.com/datasets/khulasasndh/game-of-thrones-books)
 2.  Download the files.
 3.  Create a folder named `got_data` in the root of this project directory.
 4.  Place the `.txt` files for the five books into the `got_data` folder. The notebook expects the files to be found there.
@@ -71,8 +71,8 @@ Your project structure should now look like this:
 ```
 .
 ├── got_data/
-│   ├── book1.txt
-│   ├── book2.txt
+│   ├── 001ssb.txt
+│   ├── 002ssb.txt
 │   └── ... (etc.)
 ├── slm.ipynb
 ├── README.md
